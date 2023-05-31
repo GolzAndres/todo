@@ -1,0 +1,288 @@
+* {
+    color: antiquewhite;
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:grey;
+}
+
+
+.tack {
+    border:black 10px outset;
+    transform: scale(1);
+    cursor:pointer;
+    box-shadow: 0 0 6px white(0, 0,0, 0.3);
+    transition: transform 0.2s ease-in-out;
+    transform: scale(1);
+    background:slategray;
+    height: 250px;
+    
+    width: 320px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.tack p {
+
+    text-align: center;
+}
+.tack img{
+    width:150px;
+    height: 150px;
+}
+
+
+.tack:hover {
+    background:grey;
+    transform: scale(1.1);
+    transition: all;
+    box-shadow: 0px 0px 20px rgba(0,0,0, 0,3);
+    animation: sol 1s infinite alternate;
+}
+@keyframes sol {
+    0& {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100& {
+        opacity: 1;
+    }
+}
+
+.tack:hover img {
+    animation: sol2 4s infinite;
+}
+@keyframes sol2  {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(-180deg);
+    }
+}
+.container {
+    margin-top: 30px;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 5px;
+    column-gap: 10px;
+    row-gap: 30px ;
+    justify-content: center;
+}
+@media screen and (max-width: 400px) {
+    body {
+    
+        background-color: aqua;
+    }
+    .container {
+        grid-template-columns: repeat(1,1fr);
+        padding: 5pc;
+        gap: 2pc;
+        font-size: 3pc;
+    }
+}
+
+
+.header {
+    margin-right: 20px;
+    margin-left: 20px;
+    border-radius: 10px;
+    border:black 10px outset;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+ul {
+    cursor:pointer;
+    justify-content: flex-end;
+    display: flex;
+    list-style: none;
+    gap: 80px;
+}
+
+ul:checked {
+    box-shadow: 0 0 0 3px aqua;
+    
+}
+li {
+
+    font-size: 20px;
+    color:wheat;
+
+}
+
+
+a {
+    text-decoration: none;
+}
+
+.main #texto {
+    margin-right:900px ;
+    height: 300px;
+    width: 300px;
+    border-radius: 20px;
+    cursor: pointer;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    align-items: center;
+    box-shadow: 2px 4px 6px white(0, 0,0, 0.3);
+    transition: transform 0.2s ease-in-out;
+    transform: scale(1);
+}
+
+.main #texto:hover {
+    background-image:url(./img3.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    transform: scale(1.08);
+    border: white 10px outset;
+}
+.main #texto .item{
+    padding: 10px;
+}
+
+#texto{
+    margin-left: 2.5pc;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+
+header {
+    margin-right: 20px;
+    margin-left: 20px;
+    border-radius: 10px;
+    border:white 10px outset;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 30px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 35px;
+    height: 20px;
+    margin: 20px;
+    display: flex;
+}
+
+header li {
+    color: white;
+}
+
+.tarea img {
+    margin: 100px;
+    height: 200px;
+    margin-left: 1000px;
+    margin-top:-230px ;
+
+}
+
+h2 {
+    font-size: 35px;
+    margin: 100px;
+    height: 200px;
+    margin-left: 900px;
+    margin-top:-300px ;
+}
+
+.inicio {
+    background-image:url(./img3.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+.inicio2 {
+    background-image:url(./img3.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+.inicio3 {  
+    background-image:url(./img3.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+.inicio4 {
+    background-image:url(./img3.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+.inicio5 {
+    background-image:url(./img3.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+.inicio6 {
+    background-image:url(./img3.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+header h1 {
+    color: white;
+}
+
+header a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: black;
+}
+
+.tarea h2 {
+    color:white;}
+
+.item label {
+    color: white;
+    font-weight: bold;
+}
+
+
+.letra {
+    color: white;
+}
+
+
+.header  ul li .drop-down{
+    position: absolute;
+    display: none;
+    background-color: black;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.header  ul li:hover .drop-down{
+    display: block;
+}
+
+.header  ul li .drop-down li{
+    background-color: black;
+    margin: 10px 10px;
+}
+.header  ul li .drop-down li a{
+    color: #fff;
+}
+
+.header ul li .drop-down{
+    z-index: 1;
+}
